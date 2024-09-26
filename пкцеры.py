@@ -1,0 +1,23 @@
+x = float(input('Введите делимое\n'))
+y = float(input('Введите делитель\n'))
+if y == 0:
+    print('А если тебя на ноль поделить?')
+else:
+    print(f'Частное {x/y}')
+
+
+
+ZOV = float(input('Введите сумму покупок\n'))
+if ZOV < 20:
+    print('А вот нет скидки')
+else:
+    print(f'Скидка: -35% {round(ZOV / 100 * 35)} у.е. \nИтог: {round(ZOV - ZOV / 100 * 35)}')
+
+
+
+import calendar
+apoj = int(input('Введите номер месяца\n'))
+if apoj not in range(1, 13):
+    print('Тебе сколько лет? Нет такого месяца')
+else:
+    print(calendar.month_name[apoj])
