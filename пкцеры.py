@@ -7,17 +7,17 @@ else:
 
 
 
-ZOV = float(input('Введите сумму покупок\n'))
-if ZOV < 20:
+a = float(input('Введите сумму покупок\n'))
+if a < 20:
     print('А вот нет скидки')
 else:
-    print(f'Скидка: -35% {round(ZOV / 100 * 35)} у.е. \nИтог: {round(ZOV - ZOV / 100 * 35)}')
+    print(f'Скидка: -35% {round(a / 100 * 35)} у.е. \nИтог: {round(a - a / 100 * 35)}')
 
 
 
 import calendar
-apoj = int(input('Введите номер месяца\n'))
-if apoj not in range(1, 13):
-    print('Тебе сколько лет? Нет такого месяца')
+j = int(input('Введите номер месяца\n'))
+if j not in range(1, 13):
+    print('Нет такого месяца')
 else:
-    print(calendar.month_name[apoj])
+    print(calendar.month_name[j])
